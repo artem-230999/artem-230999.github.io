@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1500px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.text-animation {
+  transition: color .3s ease;
+}
+.text-animation:hover {
+  color: var(--color_accent);
+}

@@ -1,0 +1,36 @@
+1. свойстов flex-grow разобраться. Да и вобще выделить время на нормальное изучение свойстов flex
+2. Изменить footer под свое портфолио.
+3. Добавить свои работы в портфолио и загрузить на гитхаб хостинг
+4. понять как добавлять фавиконку.
+- фавикона отдельяно для аппле устройств
+<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+5. как вставить видео на фон
+<video class="header-video" autoplay muted loop></video>
+- autoplay - чтобы сразу ще проигровалось
+- muted - мы убираем звук
+- loop - чтобы повторялось по кругу
+source type="video/mp4" src="videos/code.mp4">
+- type="video/mp4" - в каком формате видео.
+- src="videos/code.mp4" - путь к видео
+CSS
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -5;
+}
+- и фон в хедере лучше сменить на чорны для лучшей прозрачности
+
+
+6.overflow: hidden; - обрезание всего чтобы выходит, а также убирание скролла
+
+7. якорные ссылки для плавного скролла
+CSS
+html {
+    scroll-behavior: smooth;
+}

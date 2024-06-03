@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #000;
+    background-color: #fff;
+}
+
+.none {
+    display: none !important;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 80px 0;
+    background-color: #000;
+    border-bottom-right-radius: 100px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-right-radius: 100px;
+    opacity: 0.5;
+    /* z-index: -5; */
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.header-img {
+    border-radius: 80px;
+}
+
+.header__descr {
+    max-width: 440px;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.header-text {
+    font-weight: 300;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.header-btns {
+    display: flex;
+    column-gap: 20px;
+}
+
+.btn {
+    border-radius: 8px;
+    padding: 15px 25px;
+    line-height: 1;
+    color: #fff;
+    background-color: #000;
+    transition: background-color .3s ease-in, border-color .3s ease-in;
+}
+
+.btn:hover {
+    background-color: #1782CF;
+}
+
+.btn-outline {
+    border: 1px solid #3b3b3b;
+    background-color: transparent;
+}
+
+.btn:hover.btn-outline {
+    background-color: transparent;
+    border-color: #1782CF;
+}
+
+/* portfolio */
+.portfolio {
+    padding: 80px 0;
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 70px;
+}
+
+/* project */
+.project {
+    text-align: center;
+}
+
+.project-img {
+    border-radius: 30px;
+    margin-bottom: 30px;
+    transition: opacity .3s ease-in;
+}
+
+.project-img:hover {
+    opacity: 0.8;
+}
+
+.project-title {
+    font-size: 22px;
+}
+
+.project-title a {
+    text-decoration: underline;
+    color: #000;
+}
+
+/* contacts */
+.contacts {
+    padding: 80px 0;
+    border-top-left-radius: 100px;
+    background-color: #252525;
+    color: #fff;
+}
+
+.contacts-title {
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.messangers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.messanger {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+
+    padding: 46px 20px;
+    border: 1px solid #363636;
+    border-radius: 20px;
+
+    font-size: 20px;
+    color: #fff;
+
+    transition: background-color .2s ease-in;
+}
+
+.messanger:hover {
+    background-color: #1E1E1E;
+}
+
+/* footer */
+.footer {
+    padding: 30px 0;
+    background-color: #1E1E1E;
+}
+
+.footer-inner p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.footer-inner p {
+    font-size: 14px;
+    text-align: center;
+    color: #5d5d5d;
+}
+
+.footer-inner p a {
+    color: #5886a8;
+}
+
+/* inner-page */
+.inner-page {
+    padding: 80px 0 40px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.inner-page-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    margin-bottom: 40px;
+}
+
+.inner-page-title {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+.inner-page-details p:first-of-type {
+    max-width: 570px;
+    line-height: 150%;
+    color: #555;
+}
+
+.inner-page-link a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.inner-page-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.inner-page-backlink {
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 30px;
+
+    background-color: #F1F1F1;
+    font-size: 16px;
+    color: inherit;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    transition: background-color .3s ease-in;
+}
+.inner-page-backlink:hover {
+    background-color: #1782CF;
+}
